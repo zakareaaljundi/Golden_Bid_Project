@@ -1,0 +1,974 @@
+::selection {
+    color: #fff;
+    background-color: #000;
+}
+* {
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+.flex-center {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-justify {
+    display: inline-flex;
+    justify-content: center;
+}
+.flex-align {
+    display: inline-flex;
+    align-items: center;
+}
+:root {
+    --mainColorEEE: #eee;
+    --mainModalColor: #000000;
+    --goldColor: #ffd700;
+    --darkgoldColor:  #daa520;
+}
+
+body {
+    /* min-height: 3000px */
+}
+body::-webkit-scrollbar {
+    width: 7px
+}
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 5px;
+}
+
+
+.top-bar {
+    width: 100%;
+    height: 9.5%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, #ddd 60%, #fff);
+    z-index: 5;
+}
+.background-choices-icon {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    position: absolute;
+    border-radius: 50%;
+    left: 1%;
+    top: 8px;
+}
+.choices-icon {
+    width: 30px;
+    height: 6px;
+    border-radius: 3px;
+    border-style: none;
+    background-color: #000; 
+    position: absolute;
+    right: 9px;
+    bottom: 30px;
+    /* margin: -3px -74.5% 0 0; */
+    transition: all 0.4s;
+}
+.choices-icon:hover::before,
+.choices-icon:hover::after,
+.choices-icon:hover {
+    background-color: lightgreen;
+}
+.choices-icon::before {
+    content: "";
+    width: 30px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #000; 
+    position: absolute;
+    bottom: -6.9px;
+    right: 0;
+    transition: all 0.4s;
+}
+.choices-icon::after {
+    content: "";
+    width: 30px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #000; 
+    position: absolute;
+    bottom: -14px;
+    right: 0;
+    transition: all 0.4s;
+}
+.choices {
+    width: 210px;
+    height: 0px;
+    position: absolute;
+    top: 35px;
+    left: -50%;
+    background-color: transparent;
+    transition: all 0.8s;
+    display: none;
+    direction: rtl;
+}
+.choices::before {
+    content: "";
+    width: 0;
+    position: absolute;
+    top: -38px;
+    left: 7px;
+    border: 25px;
+    border-style: solid;
+    border-color: transparent transparent gray transparent;
+}
+.choices ul li {
+    display: block;
+}
+.choices ul li a{
+    font-size: 25px; 
+    font-weight: bold;
+    margin: 15px 45px 0 0;
+    color: #fff;
+    display: block;
+    text-transform: capitalize;
+}
+.background-choices-icon:hover > .choices-icon > .choices {
+    display: inline-block;
+    height: 275px;
+    bottom: -203px;
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 1);
+    z-index: 4;
+}
+.first-list-item::after,
+.second-list-item::after,
+.third-list-item::after,
+.fourth-list-item::after,
+.fifth-list-item::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: lightgray;
+    bottom: 224px;
+    left: 0;
+}
+.second-list-item::after {
+    bottom: 180px;
+}
+.third-list-item::after {
+    bottom: 136px;
+}
+.fourth-list-item::after {
+    bottom: 90px;
+}
+.fifth-list-item::after {
+    bottom: 46px;
+}
+.first-list-item:hover,
+.second-list-item:hover,
+.third-list-item:hover,
+.fourth-list-item:hover,
+.fifth-list-item:hover,
+.sixth-list-item:hover {
+    color: lightgreen;
+    transition: all 0.3s;
+}
+.profile-icon,
+.communicate-icon,
+.help-icon,
+.about-icon,
+.feedback-icon,
+.logout-icon {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-size: 30px;
+    color: #000;
+    position: absolute;
+    top: 11px;
+    right: 5px;
+}
+.communicate-icon {
+    top: 57px;
+}
+.help-icon {
+    top: 101px;
+}
+.about-icon {
+    top: 147px;
+}
+.feedback-icon {
+    top: 192px;
+}
+.logout-icon {
+    top: 234px;
+}
+.for-profile-icon-hover:hover > .profile-icon,
+.for-communicate-icon-hover:hover > .communicate-icon,
+.for-help-icon-hover:hover > .help-icon,
+.for-about-icon-hover:hover > .about-icon,
+.for-feedback-icon-hover:hover > .feedback-icon,
+.for-logout-icon-hover:hover > .logout-icon {
+    color: lightgreen;
+    transition: all 0.3s;
+}
+
+.sign-up-container-top-bar,
+.product-container-top-bar,
+.sell-container-top-bar,
+.home-container-top-bar {
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgb(128 128 128 / 25%) 10%, transparent);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    height: 71%;
+    top: 15%;
+    transition: all 0.5s;
+}
+.sign-up-container-top-bar:hover,
+.product-container-top-bar:hover,
+.sell-container-top-bar:hover,
+.home-container-top-bar:hover {
+    background-color: #00000025;
+    box-shadow: 4px 4px 8px 5px #000;
+    transform: translate(0, -5px); 
+}
+.sell,
+.product,
+.sign-up,
+.home{
+    color: #fff;
+    font-family: 'Hubballi', cursive;
+    font-weight: bold;
+    position: absolute;
+    border-radius: 15px;
+    text-decoration: none;
+    text-shadow: 3.5px 1px 4px #000;
+    transition: all 0.5s;
+}
+.sign-up:hover,
+.product:hover,
+.sell:hover,
+.home:hover {
+    text-shadow: 3.5px 1px 4px lightgreen;
+}
+.sign-up-icon-1:hover,
+.sign-up-icon-2:hover,
+.product-icon:hover,
+.sell-icon:hover,
+.home-icon:hover {
+    color: lightgreen;
+}
+.sign-up-container-top-bar:hover > .sign-up-icon-1,
+.sign-up-container-top-bar:hover > .sign-up-icon-2,
+.product-container-top-bar:hover > .product-icon,
+.sell-container-top-bar:hover > .sell-icon,
+.home-container-top-bar:hover > .home-icon {
+    font-size: 0;
+}
+
+.sign-up-container-top-bar {
+    width: 11%;
+    left: 5.5%;
+}
+.sign-up {
+    font-size: 25px;
+    left: 16px;
+}
+.sign-up-container-top-bar:hover > .sign-up {
+    font-size: 32px;
+}
+.sign-up-icon-1,
+.sign-up-icon-2 {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-size: 28px;
+    color: black;
+    /* top: 12px; */
+    right: 12px;
+    z-index: 3;
+    position: absolute;
+    transition: all 0.5s;
+}
+.sign-up-icon-2 {
+    top: 24px;
+    right: 7px;
+    font-size: 17px;
+    background-image: linear-gradient(to bottom, lightgray 64%, transparent);
+    border-radius: 50%;
+}
+
+.product-container-top-bar {
+    width: 8%;
+    left: 17.5%;
+}
+.product {
+    font-size: 25px;
+    left: 14px;
+}
+.product-container-top-bar:hover > .product {
+    font-size: 34px;
+}
+.product-icon {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-size: 25px;
+    color: black;
+    top: 12px;
+    right: 4px;
+    z-index: 3;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.sell-container-top-bar {
+    width: 8%;
+    left: 26.5%;
+}
+.sell {
+    font-size: 25px;
+    top: 8px;
+    left: 14px;
+}
+.sell-container-top-bar:hover > .sell {
+    font-size: 33px;
+    top: 3px;
+}
+.sell-icon {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-size: 25px;
+    color: black;
+    top: 12px;
+    right: 5px;
+    z-index: 3;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.home-container-top-bar {
+    width: 11%;
+    left: 35.5%;
+}
+.home {
+    font-size: 22px;
+    left: 8px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+.home-container-top-bar:hover > .home {
+    font-size: 27px;
+}
+.home-icon {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-size: 28px;
+    color: black;
+    top: 10px;
+    right: 5px;
+    z-index: 3;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+
+.for-special-moving {
+    margin-left: 83%;
+}
+.golden-bid-logo {
+    position: relative;
+    margin: -82px 0 0 16%;
+}
+.hummer-head {
+    width: 17px;
+    height: 25px;
+    background-color: #d9a521;
+    transform: rotate(35deg);
+    margin: 10px 0 0 25px;
+    animation: gold 3s infinite alternate ease-in-out;
+}
+.hummer-head::before {
+    content: "";
+    width: 22px;
+    height: 5px;
+    background-color: #d9a521;
+    border-radius: 5px;
+    position: absolute;
+    top: -4px;
+    left: -2.5px;
+    animation: inherit;
+}
+.hummer-head::after {
+    content: "";
+    width: 22px;
+    height: 5px;
+    background-color: #d9a521;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: -2.5px;
+    animation: inherit;
+}
+.hummer-hand {
+    width: 50px;
+    height: 6px;
+    background-color: #d9a521;
+    border-radius: 0 10px 10px 0;
+    transform: rotate(35deg);
+    position: absolute;
+    left: 30px;
+    top: 21px;
+    animation: gold 3s infinite alternate ease-in-out;
+}
+.hummer-hand::before {
+    content: "winner";
+    color: transparent;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+    position: absolute;
+    transition-delay: 0.3s;
+}
+.for-special-moving:hover > .golden-bid-logo > .hummer-hand::before {
+    transform: rotate(-35deg) translate(23px, -8px);
+    color: var(--darkgoldColor, lightblue);
+    transition: all 0.5s 3.1s;
+}
+.hummer-floor {
+    width: 35px;
+    height: 12px;
+    background-color: #d9a521;
+    border-radius: 5px 5px 0 0 ;
+    position: absolute;
+    bottom: -23px;
+    left: 16px;
+    animation: gold 3s infinite alternate ease-in-out;
+}
+@keyframes gold{
+    to {
+        background-color: gold;
+    }
+}
+.the-name {
+    color: gold;
+    font-size: 72px;
+    text-transform: uppercase;
+    font-family: 'Courgette', cursive;
+    font-weight: bold;
+    display: flex;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    margin: -17px 0 0 -9px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    animation: background-color 3s infinite alternate ease-out;
+}
+@keyframes background-color {
+    to {
+        color: #d9a521;
+    }
+}
+.for-special-moving:hover > .the-name + .golden-bid-logo > .hummer-hand {
+    transform-origin: center center;
+    animation: moving-hand-hummer 0.5s 6 alternate ease-in
+}
+.for-special-moving:hover > .the-name + .golden-bid-logo > .hummer-head {
+    animation: moving-head-hummer 0.5s 6 alternate ease-in
+}
+.for-special-moving:hover > .the-name,
+.for-special-moving:hover > .the-name + .golden-bid-logo > .hummer-floor,
+.for-special-moving:hover > .the-name + .golden-bid-logo > .hummer-head::after,
+.for-special-moving:hover > .the-name + .golden-bid-logo > .hummer-head::before {
+    animation-play-state: paused;
+}
+@keyframes moving-head-hummer {
+    to {
+        transform-origin: top right;
+        transform: rotate(0deg) translateY(12px)
+    }
+}
+@keyframes moving-hand-hummer {
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+.whole-container {
+    width: 25%;
+    height: 80%;
+    position: absolute;
+    top: 13%;
+    left: 36%;
+    background-color: var(--mainColorEEE, lightblue);
+    border-radius: 20px;
+    overflow: auto;
+}
+.whole-container::-webkit-scrollbar {
+    width: 5px
+}
+.whole-container::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+.whole-container::-webkit-scrollbar-thumb {
+    background-color: #80808085;
+    border-radius: 5px;
+}
+.main-sign-up-logo {
+    width: 210px;
+    height: 210px;
+    position: absolute;
+    top: 4%;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+.head {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background-color: #000;
+    border: 10px solid #ccc;
+    border-radius: 50%;
+    margin-top: 13px; 
+    z-index: 7;
+}
+.head::before {
+    content: "";
+    width: 0px;
+    height: 62px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #ccc;
+    transition: all 1s;
+    margin-left: -1.2px;
+    margin-top: -1px;
+}
+.head:hover::before {
+    width: 62px;
+}
+.body {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    background-color: #000;
+    border: 10px;
+    border-style: solid;
+    border-color: #ccc #ccc transparent #ccc;
+    border-radius: 50%;
+    margin-top: 75px; 
+    z-index: 6;
+}
+.circle {
+    width: 60px;
+    height: 60px;
+    background-color: #ccc;
+    position: absolute;
+    border: 5px solid #000;
+    border-radius: 50%;
+    margin: 34px 0 0 70px; 
+}
+.-y-0 {
+    width: 40px;
+    height: 8px;
+    position: absolute;
+    background-color: #000;
+    margin: 21px 0 0 5px;
+    border-radius: 10px;
+    z-index: 4; 
+    animation-name: spinner;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate-reverse;
+
+}
+@keyframes spinner {
+    0% {
+        transform: rotate(359deg)
+    }
+    85% {
+        transform: rotate(1deg)
+    }
+}
+.x-0 {
+    width: 8px;
+    height: 40px;
+    position: absolute;
+    background-color: #000;
+    margin: 5px 0 0 21px;
+    /* overflow: hidden; */
+    /* margin: 5px auto; */
+    border-radius: 10px;
+    z-index: 4; 
+    animation-name: spinner;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes spinner {
+    0% {
+        transform: rotate(359deg)
+    }
+    85% {
+        transform: rotate(1deg)
+    }
+}
+.creating-account-fields {
+    width: 68%;
+    height: 46%;
+    position: absolute;
+    top: 45%;
+}
+.creating-account-fields-label {
+    font-size: 27px;
+    font-weight: bold;
+    color: brown;
+}
+.first-name-container,
+.second-name-container,
+.user-name-container,
+.email-container {
+    width: 100%;
+    height: 43px;
+    font-size: 21px;
+    position: absolute;
+    top: 18%;
+    border: none;
+    color: brown;
+    border-radius: 22px;
+    padding: 2px 32px 2px 2px;
+    background-color: #fff;
+    box-shadow: 2px 3px 3px 0px #000;
+    direction: rtl;
+    transition: all 0.5s;
+}
+.second-name-container {
+    top: 39%;
+}
+.user-name-container {
+    top: 60%;
+}
+.email-container {
+    top: 81%;
+}
+.first-name-container:focus,
+.second-name-container:focus,
+.user-name-container:focus,
+.email-container:focus {
+    background-color: #ddffd4;
+    border-radius: 22px 0;
+}
+.first-name-icon,
+.second-name-icon,
+.user-name-icon,
+.email-icon {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-size: 22px;
+    position: absolute;
+    top: 22%;
+    right: 3.5%;
+}
+.second-name-icon {
+    top: 42.4%;
+}
+.user-name-icon {
+    top: 63.3%;
+}
+.email-icon {
+    top: 85.3%;
+}
+
+.paying-details-fields {
+    width: 68%;
+    height: 37%;
+    position: absolute;
+    top: 97%;
+}
+.paying-details-fields-label {
+    font-size: 27px;
+    font-weight: bold;
+    color: brown;
+}
+.credit-card-name-container,
+.credit-card-num-container,
+.credit-card-password-container {
+    width: 100%;
+    height: 43px;
+    font-size: 21px;
+    position: absolute;
+    top: 26%;
+    color: brown;
+    border-radius: 22px;
+    border: none;
+    padding: 2px 32px 2px 2px;
+    background-color: #fff;
+    box-shadow: 2px 3px 3px 0px #000;
+    transition: all 0.5s;
+    direction: rtl;
+}
+.credit-card-num-container {
+    top: 52%;
+}
+.credit-card-password-container {
+    top: 78%;
+}
+.credit-card-name-container:focus,
+.credit-card-num-container:focus,
+.credit-card-password-container:focus {
+    background-color: #ddffd4;
+    border-radius: 22px 0;
+}
+.credit-card-name-icon,
+.credit-card-num-icon,
+.credit-card-password-icon {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-size: 22px;
+    position: absolute;
+    top: 30%;
+    right: 3.5%;
+}
+.credit-card-num-icon {
+    top: 56.5%;
+}
+.credit-card-password-icon {
+    top: 83%;
+}
+
+.personal-info-fields {
+    width: 68%;
+    height: 66%;
+    position: absolute;
+    top: 140%;
+}
+.personal-info-fields-label {
+    font-size: 27px;
+    font-weight: bold;
+    color: brown;
+}
+.personal-info-date-container,
+.personal-info-city-container,
+.personal-info-address-container,
+.personal-info-phone-num-container,
+.profile-image-upload-Btn,
+.personal-info-postal-code-container {
+    width: 100%;
+    height: 43px;
+    font-size: 21px;
+    position: absolute;
+    top: 12%;
+    color: brown;
+    border-radius: 22px;
+    border: none;
+    padding: 2px 32px 2px 2px;
+    box-shadow: 2px 3px 3px 0px #000;
+    background-color: #fff;
+    transition: all 0.5s;
+    direction: rtl;
+}
+.personal-info-date-container {
+    /* color: #757575; */
+    padding: 1px 7px;
+}
+.personal-info-city-container {
+    /* color: #757575; */
+    appearance: none;
+    top: 26%;
+}
+.personal-info-city-container-arrow {
+    display: none;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 29.5%;
+    left: 8.5%;
+    background-color: transparent;
+    border: 2px;
+    border-color: #000;
+    border-style: none solid solid none;
+    transform: rotate(45deg);
+}
+.personal-info-city-container:hover ~ .personal-info-city-container-arrow {
+    display: inline-block;
+}
+.personal-info-address-container {
+    top: 40%;
+}
+.personal-info-phone-num-container {
+    top: 54%;
+}
+.personal-info-profile-image-container {
+    top: 78%;
+}
+.personal-info-postal-code-container {
+    top: 82%;
+}
+.personal-info-date-container:focus,
+.personal-info-city-container:focus,
+.personal-info-address-container:focus,
+.personal-info-phone-num-container:focus,
+.profile-image-upload-Btn:focus,
+.personal-info-postal-code-container:focus {
+    background-color: #ddffd4;
+    border-radius: 22px 0;
+}
+.personal-info-city-icon,
+.personal-info-address-icon,
+.personal-info-phone-num-icon,
+.personal-info-profile-image-icon,
+.personal-info-postal-code-icon {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-size: 22px;
+    position: absolute;
+    top: 30%;
+    right: 3.5%;
+    color: #000;
+}
+.personal-info-city-icon {
+    top: 28.7%;
+}
+.personal-info-address-icon {
+    top: 42.7%;
+}
+.personal-info-phone-num-icon {
+    top: 56.7%;
+}
+.personal-info-profile-image-icon {
+    top: 20%;
+    right: 3%;
+}
+.personal-info-postal-code-icon {
+    top: 85%;
+}
+.credit-card-num-container::-webkit-inner-spin-button,
+.personal-info-phone-num-container::-webkit-inner-spin-button,
+.personal-info-postal-code-container::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.passwords-fields {
+    width: 68%;
+    height: 27%;
+    position: absolute;
+    top: 208%;
+}
+.passwords-fields-label {
+    font-size: 27px;
+    font-weight: bold;
+    color: brown;
+}
+.password-account-container,
+.re-password-account-container {
+    width: 100%;
+    height: 43px;
+    font-size: 21px;
+    position: absolute;
+    top: 32%;
+    border: none;
+    color: brown;
+    box-shadow: 2px 3px 3px 0px #000;
+    border-radius: 22px;
+    padding: 2px 32px 2px 2px;
+    background-color: #fff;
+    transition: all 0.5s;
+    direction: rtl;
+}
+.re-password-account-container {
+    top: 68%;
+}
+.password-account-container:focus,
+.re-password-account-container:focus {
+    background-color: #ddffd4;
+    border-radius: 22px 0;
+}
+.password-account-icon,
+.re-password-account-icon {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-size: 22px;
+    position: absolute;
+    top: 38%;
+    right: 3.5%;
+}
+.re-password-account-icon {
+    top: 74%;
+}
+
+
+
+.personal-info-profile-image-label {
+    font-size: 21px;
+    color: brown;
+    position: absolute;
+    top: 10px;
+    right: 34px;
+}
+.personal-info-profile-image-container {
+    width: 100%;
+    height: 43px;
+    font-size: 23px;
+    padding: 1px 4px 4px 4px;
+    box-shadow: 2px 3px 3px 0px #000;
+    border-radius: 23px;
+    position: absolute;
+    top: 68%;
+    background-color: #fff;
+    cursor: pointer;
+}
+.personal-info-profile-image-container:hover {
+    background-color: #ddffd4
+}
+.input-hiding-container {
+    width:0px; 
+    height: 0px;
+    overflow: hidden;
+}
+#profile-image-displaying-container {
+    width: 212px;
+    height: 212px;
+    position: absolute;
+    top: 22px;
+    z-index: 9;
+    background-color: transparent;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.submit-field {
+    width: 68%;
+    height: 18%;
+    position: absolute;
+    top: 240%;
+}
+.submit-btn {
+    width: 50%;
+    height: 43px;
+    font-size: 27px;
+    color: lightgreen;
+    padding: 1px 4px 4px 4px;
+    box-shadow: 2px 3px 3px 0px #000;
+    border-radius: 23px;
+    position: absolute;
+    top: 21%;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.submit-btn:hover {
+    border-color: lightgreen;
+    background-color: #ddffd4;
+    color: brown;
+}

@@ -1,0 +1,723 @@
+::selection {
+    color: #fff;
+    background-color: #000;
+}
+* {
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+.flex-center {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-justify {
+    display: inline-flex;
+    justify-content: center;
+}
+.flex-align {
+    display: inline-flex;
+    align-items: center;
+}
+.the-position {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+:root {
+    --mainColor: #eee;
+    --mainModalColor: #000000;
+    --goldColor: #ffd700;
+    --darkgoldColor:  #daa520;
+}
+
+body {
+    /* min-height: 3000px */
+}
+body::-webkit-scrollbar {
+    width: 7px
+}
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 5px;
+}
+
+
+.top-bar {
+    width: 100%;
+    height: 9.5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, #ddd 60%, #fff);
+    z-index: 99;
+}
+.background-choices-icon {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    position: absolute;
+    border-radius: 50%;
+    left: 1%;
+    top: 8px;
+}
+.choices-icon {
+    width: 30px;
+    height: 6px;
+    border-radius: 3px;
+    border-style: none;
+    background-color: #000; 
+    position: absolute;
+    right: 9px;
+    bottom: 30px;
+    /* margin: -3px -74.5% 0 0; */
+    transition: all 0.4s;
+}
+.choices-icon:hover::before,
+.choices-icon:hover::after,
+.choices-icon:hover {
+    background-color: lightgreen;
+}
+.choices-icon::before {
+    content: "";
+    width: 30px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #000; 
+    position: absolute;
+    bottom: -6.9px;
+    right: 0;
+    transition: all 0.4s;
+}
+.choices-icon::after {
+    content: "";
+    width: 30px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #000; 
+    position: absolute;
+    bottom: -14px;
+    right: 0;
+    transition: all 0.4s;
+}
+.choices {
+    width: 210px;
+    height: 0px;
+    position: absolute;
+    top: 35px;
+    left: -50%;
+    background-color: transparent;
+    transition: all 0.8s;
+    display: none;
+    direction: rtl;
+}
+.choices::before {
+    content: "";
+    width: 0;
+    position: absolute;
+    top: -38px;
+    left: 7px;
+    border: 25px;
+    border-style: solid;
+    border-color: transparent transparent gray transparent;
+}
+.choices ul li {
+    display: block;
+}
+.choices ul li a{
+    font-size: 25px; 
+    font-weight: bold;
+    margin: 15px 45px 0 0;
+    color: #fff;
+    display: block;
+    text-transform: capitalize;
+}
+.background-choices-icon:hover > .choices-icon > .choices {
+    display: inline-block;
+    height: 275px;
+    bottom: -203px;
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 1);
+    z-index: 4;
+}
+
+.first-list-item::after,
+.second-list-item::after,
+.third-list-item::after,
+.fourth-list-item::after,
+.fifth-list-item::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: lightgray;
+    bottom: 224px;
+    left: 0;
+}
+.second-list-item::after {
+    bottom: 180px;
+}
+.third-list-item::after {
+    bottom: 136px;
+}
+.fourth-list-item::after {
+    bottom: 90px;
+}
+.fifth-list-item::after {
+    bottom: 46px;
+}
+.first-list-item:hover,
+.second-list-item:hover,
+.third-list-item:hover,
+.fourth-list-item:hover,
+.fifth-list-item:hover,
+.sixth-list-item:hover {
+    color: lightgreen;
+    transition: all 0.3s;
+}
+.profile-icon,
+.communicate-icon,
+.help-icon,
+.about-icon,
+.feedback-icon,
+.logout-icon {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-size: 30px;
+    color: #000;
+    position: absolute;
+    top: 11px;
+    right: 5px;
+}
+.communicate-icon {
+    top: 57px;
+}
+.help-icon {
+    top: 101px;
+}
+.about-icon {
+    top: 147px;
+}
+.feedback-icon {
+    top: 192px;
+}
+.logout-icon {
+    top: 234px;
+}
+.for-profile-icon-hover:hover > .profile-icon,
+.for-communicate-icon-hover:hover > .communicate-icon,
+.for-help-icon-hover:hover > .help-icon,
+.for-about-icon-hover:hover > .about-icon,
+.for-feedback-icon-hover:hover > .feedback-icon,
+.for-logout-icon-hover:hover > .logout-icon {
+    color: lightgreen;
+    transition: all 0.3s;
+}
+
+.sign-up-container-top-bar,
+.product-container-top-bar,
+.sell-container-top-bar,
+.home-container-top-bar {
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgb(128 128 128 / 25%) 10%, transparent);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    height: 71%;
+    top: 15%;
+    transition: all 0.5s;
+}
+.sign-up-container-top-bar:hover,
+.product-container-top-bar:hover,
+.sell-container-top-bar:hover,
+.home-container-top-bar:hover {
+    background-color: #00000025;
+    box-shadow: 4px 4px 8px 5px #000;
+    transform: translate(0, -5px); 
+}
+.sell,
+.product,
+.sign-up,
+.home{
+    color: #fff;
+    font-family: 'Hubballi', cursive;
+    font-weight: bold;
+    position: absolute;
+    border-radius: 15px;
+    text-decoration: none;
+    text-shadow: 3.5px 1px 4px #000;
+    transition: all 0.5s;
+}
+.sign-up:hover,
+.product:hover,
+.sell:hover,
+.home:hover {
+    text-shadow: 3.5px 1px 4px lightgreen;
+}
+.sign-up-icon-1:hover,
+.sign-up-icon-2:hover,
+.product-icon:hover,
+.sell-icon:hover,
+.home-icon:hover {
+    color: lightgreen;
+}
+.sign-up-container-top-bar:hover > .sign-up-icon-1,
+.sign-up-container-top-bar:hover > .sign-up-icon-2,
+.product-container-top-bar:hover > .product-icon,
+.sell-container-top-bar:hover > .sell-icon,
+.home-container-top-bar:hover > .home-icon {
+    font-size: 0;
+}
+
+.sign-up-container-top-bar {
+    width: 11%;
+    left: 5.5%;
+}
+.sign-up {
+    font-size: 25px;
+    left: 16px;
+}
+.sign-up-container-top-bar:hover > .sign-up {
+    font-size: 32px;
+}
+.sign-up-icon-1,
+.sign-up-icon-2 {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-size: 28px;
+    color: black;
+    /* top: 12px; */
+    right: 12px;
+    z-index: 3;
+    position: absolute;
+    transition: all 0.5s;
+}
+.sign-up-icon-2 {
+    top: 24px;
+    right: 7px;
+    font-size: 17px;
+    background-image: linear-gradient(to bottom, lightgray 64%, transparent);
+    border-radius: 50%;
+}
+
+.product-container-top-bar {
+    width: 8%;
+    left: 17.5%;
+}
+.product {
+    font-size: 25px;
+    left: 14px;
+}
+.product-container-top-bar:hover > .product {
+    font-size: 34px;
+}
+.product-icon {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-size: 25px;
+    color: black;
+    top: 12px;
+    right: 4px;
+    z-index: 3;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.sell-container-top-bar {
+    width: 8%;
+    left: 26.5%;
+}
+.sell {
+    font-size: 25px;
+    top: 8px;
+    left: 14px;
+}
+.sell-container-top-bar:hover > .sell {
+    font-size: 33px;
+    top: 3px;
+}
+.sell-icon {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-size: 25px;
+    color: black;
+    top: 12px;
+    right: 5px;
+    z-index: 3;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.home-container-top-bar {
+    width: 11%;
+    left: 35.5%;
+}
+.home {
+    font-size: 22px;
+    left: 8px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+.home-container-top-bar:hover > .home {
+    font-size: 27px;
+}
+.home-icon {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-size: 28px;
+    color: black;
+    top: 10px;
+    right: 5px;
+    z-index: 3;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+
+.for-special-moving {
+    margin-left: 83%;
+}
+.golden-bid-logo {
+    position: relative;
+    margin: -82px 0 0 16%;
+}
+.hummer-head {
+    width: 17px;
+    height: 25px;
+    background-color: #d9a521;
+    transform: rotate(35deg);
+    margin: 10px 0 0 25px;
+    animation: gold 3s infinite alternate ease-in-out;
+}
+.hummer-head::before {
+    content: "";
+    width: 22px;
+    height: 5px;
+    background-color: #d9a521;
+    border-radius: 5px;
+    position: absolute;
+    top: -4px;
+    left: -2.5px;
+    animation: inherit;
+}
+.hummer-head::after {
+    content: "";
+    width: 22px;
+    height: 5px;
+    background-color: #d9a521;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: -2.5px;
+    animation: inherit;
+}
+.hummer-hand {
+    width: 50px;
+    height: 6px;
+    background-color: #d9a521;
+    border-radius: 0 10px 10px 0;
+    transform: rotate(35deg);
+    position: absolute;
+    left: 30px;
+    top: 21px;
+    animation: gold 3s infinite alternate ease-in-out;
+}
+.hummer-hand::before {
+    content: "winner";
+    color: transparent;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+    position: absolute;
+    transition-delay: 0.3s;
+}
+.for-special-moving:hover > .golden-bid-logo > .hummer-hand::before {
+    transform: rotate(-35deg) translate(23px, -8px);
+    color: var(--darkgoldColor, lightblue);
+    transition: all 0.5s 3.1s;
+}
+.hummer-floor {
+    width: 35px;
+    height: 12px;
+    background-color: #d9a521;
+    border-radius: 5px 5px 0 0 ;
+    position: absolute;
+    bottom: -23px;
+    left: 16px;
+    animation: gold 3s infinite alternate ease-in-out;
+}
+@keyframes gold{
+    to {
+        background-color: gold;
+    }
+}
+.the-name {
+    color: gold;
+    font-size: 72px;
+    text-transform: uppercase;
+    font-family: 'Courgette', cursive;
+    font-weight: bold;
+    display: flex;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    margin: -17px 0 0 -9px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    animation: background-color 3s infinite alternate ease-out;
+}
+@keyframes background-color {
+    to {
+        color: #d9a521;
+    }
+}
+.for-special-moving:hover > .the-name + .golden-bid-logo > .hummer-hand {
+    transform-origin: center center;
+    animation: moving-hand-hummer 0.5s 6 alternate ease-in
+}
+.for-special-moving:hover > .the-name + .golden-bid-logo > .hummer-head {
+    animation: moving-head-hummer 0.5s 6 alternate ease-in
+}
+.for-special-moving:hover > .the-name,
+.for-special-moving:hover > .the-name + .golden-bid-logo > .hummer-floor,
+.for-special-moving:hover > .the-name + .golden-bid-logo > .hummer-head::after,
+.for-special-moving:hover > .the-name + .golden-bid-logo > .hummer-head::before {
+    animation-play-state: paused;
+}
+@keyframes moving-head-hummer {
+    to {
+        transform-origin: top right;
+        transform: rotate(0deg) translateY(12px)
+    }
+}
+@keyframes moving-hand-hummer {
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.whole-container {
+    width: 35%;
+    height: 76%;
+    position: absolute;
+    top: 15%;
+    left: 33.5%;
+    border: 2px solid  #000;
+    background-color: var(--mainColor, lightblue);
+    border-radius: 40px;
+}
+.report-btn {
+    width: 8%;
+    height: 8%;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    cursor: pointer;
+    /* background-color: red; */
+}
+.report-icon {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-size: 35px;
+    color: #000;
+    transition: all 0.3s
+}
+.report-icon:hover {
+    color: red
+}
+.seller-main-pic {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+.seller-info-table {
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    top: 59%;
+    left: 0;
+    direction: rtl;
+}
+.seller-name-and-integrity-label,
+.seller-num-and-product-num-label {
+    width: 100%;
+    height: 25%;
+    border-radius: 20px;
+    background-color: gray;
+}
+.seller-name-and-integrity,
+.seller-num-and-product-num {
+    width: 100%;
+    height: 25%;
+    border-radius: 20px;
+}
+.seller-name-and-integrity {
+    top: 28%
+}
+.seller-num-and-product-num-label {
+    top: 65%
+}
+.seller-num-and-product-num {
+    top: 93%
+}
+.seller-name-label,
+.seller-integrity-label,
+.seller-num-label,
+.seller-product-num-label {
+    font-size: 25px;
+    font-weight: bold;
+    color: #000;
+    position: absolute;
+    right: 20.5%;
+}
+.seller-integrity-label,
+.seller-product-num-label {
+    right: 70%;
+}
+
+.seller-name-container,
+.seller-integrity-container,
+.seller-num-container,
+.seller-product-num-container { 
+    border-radius: 20px;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid gray;
+    background-color: lightgray;
+}
+.seller-integrity-container,
+.seller-product-num-container {
+    right: 50%;
+}
+.seller-name,
+.seller-integrity,
+.seller-num,
+.seller-product-num {
+    font-size: 22px;
+    color: brown;
+    direction: rtl
+}
+
+#report-container {
+    display: none;
+    width: 30%;
+    height: 50%;
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    background-color: #ccc;
+    border-radius: 30px 0 30px 30px;
+    transition: all 0.4s
+}
+#report-container:target {
+    /* height: 50%; */
+    display: inline-block;
+}
+#report-container::before{
+    content: "";
+    display: none;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    right: -40px;
+    border: 20px;
+    border-style: solid;
+    border-color: transparent transparent transparent #ccc;
+}
+#report-container:target::before {
+    display: inline-block;
+}
+.for-close {
+    font-size: 0px;
+    font-weight: bold;
+    color: #000;
+    position: absolute;
+    top: 1%;
+    right: 3%;
+    cursor: pointer;
+    background-color: transparent;
+    z-index: 5;
+}
+.for-close:hover {
+    color: red
+}
+#report-container:target > .for-close {
+    font-size: 35px;
+}
+.report-icon-container {
+    width: 100%;
+    height: 26%;
+}
+.report-main-icon {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-size: 95px;
+    color: green;
+    position: absolute;
+    top: 5%;
+}
+.report-label-container {
+    direction: rtl;
+    width: 100%;
+    height: 36%;
+    top: 26%;
+    padding: 5px 20px;
+    font-size: 20px;
+    color: #000
+}
+.report-form {
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    top: 60%;
+}
+.report-input-field {
+    direction: rtl;
+    width: 80%;
+    height: 50px;
+    position: absolute;
+    /* top: 50%; */
+    /* left: 10%; */
+    border-radius: 21px;
+    padding: 0 15px 0 10px;
+    font-size: 21px;
+    color: #000;
+    border: 2px solid green;
+}
+.report-submit {
+    width: 35%;
+    height: 45px;
+    position: absolute;
+    top: 50%;
+    /* left: 32.5%; */
+    font-size: 26px;
+    color: #00000080;
+    background-color: #fff;
+    border-radius: 15px 15px 50% 50%;
+    border: 2px solid green;
+    cursor: pointer;
+    transition: all 0.3s
+}
+.report-submit:hover {
+    background-color: lightgreen;
+    border: 2px solid #fff;
+    color: #fff
+}
+.report-list {
+    direction: rtl;
+    padding-left: 30px
+}

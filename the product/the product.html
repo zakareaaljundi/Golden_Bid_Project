@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="../images/auction hammer.png">
+    <title>Product Page</title>
+
+    <link rel="stylesheet" href="./the product.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Luxurious+Roman&family=Mochiy+Pop+P+One&family=Open+Sans:wght@300;400&family=Oswald&family=Praise&family=Roboto:wght@300&family=Rubik+Beastly&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Caveat&family=Chakra+Petch&family=Courgette&family=Dancing+Script:wght@700&family=Hubballi&family=League+Gothic&family=Lobster&family=Luxurious+Roman&family=Mochiy+Pop+P+One&family=Open+Sans:wght@300;400&family=Oswald&family=Permanent+Marker&family=Praise&family=Red+Hat+Mono:wght@500&family=Roboto:wght@300&family=Rubik+Beastly&family=Saira+Condensed:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="background-choices-icon">
+            <div class="choices-icon">
+                <div class="choices">
+                    <ul>
+                        <li class="for-profile-icon-hover">
+                            <a href="../the profile/the profile.html" class="first-list-item" target="_blank">الصفحة الشخصية</a>
+                                <i class="profile-icon">person</i>
+                        </li>
+                        <li class="for-communicate-icon-hover">
+                            <a href="#communicate-guide-about" class="second-list-item">تواصل معنا</a>
+                                <i class="communicate-icon">link</i>
+                        </li>
+                        <li class="for-help-icon-hover">
+                            <a href="../the main.html #for-help" class="third-list-item">مساعدة</a>
+                                <i class="help-icon">help</i>
+                        </li>
+                        <li class="for-about-icon-hover">
+                            <a href="#communicate-guide-about" class="fourth-list-item">حول</a>
+                                <i class="about-icon">info</i>
+                        </li>
+                        <li class="for-feedback-icon-hover">
+                            <a href="#communicate-guide-about" class="fifth-list-item">نصائح وإرشادات</a>
+                                <i class="feedback-icon">security</i> 
+                        </li>
+                        <li class="for-logout-icon-hover">
+                            <a href="#" class="sixth-list-item">تسجيل الخروج</a>
+                                <i class="logout-icon">logout</i> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a href="../the sign up/the signup.html" class="sign-up-container-top-bar" target="_blank">
+            <div class="sign-up">إنشاء حساب</div>
+                <i class="sign-up-icon-1">person</i>
+                <i class="sign-up-icon-2">add</i>
+        </a>
+        <a href="./the product.html" class="product-container-top-bar">
+            <div class="product">المنتجات</div>
+                <i class="product-icon">shop</i>
+        </a>
+        <a href="../the selling/the selling.html" class="sell-container-top-bar" target="_blank">
+            <div class="sell">بيع منتج</div>
+                <i class="sell-icon">sell</i>
+        </a>
+        <a href="../the main.html" class="home-container-top-bar">
+            <div class="home">الصفحة الرئيسية</div>
+                <i class="home-icon">home</i>
+        </a>
+
+        <div class="for-special-moving">
+            <div class="the-name">g &#160&#160bid</div>
+            <div class="golden-bid-logo">
+                <div class="hummer-head"></div>
+                <div class="hummer-hand"></div>
+                <div class="hummer-floor"></div>
+            </div>
+        </div>
+    </div>
+    <div class="left-side-guide flex-justify">
+        <i class="left-side-guide-icon">security</i>
+        <span class="left-side-guide-main-label flex-justify">* إرشادات عامة *</span>
+        <span class="left-side-guide-label-1 flex-justify">- يرجى التأكد أولاً من نزاهة صاحب المنتج قبل المزايدة على منتجه وذلك بالدخول لصفحته الشخصية والتأكد من عدم وجود إبلاغات عليه، لضمان إجراء عملية الشراء دون إحتيال. </span>
+        <span class="left-side-guide-label-2 flex-justify">- يرجى بعدم المزايدة على منتج إن كانت معلومات المنتج أو صوره مضللة، كما يرجى الإبلاغ  عن ذلك.</span>
+        <span class="left-side-guide-label-3 flex-justify">- يرجى الإلتقاء بأماكن عامة عند إستلام المنتج. </span>
+    </div>
+
+    <div class="right-side flex-justify">
+        <h1>الأقسام</h1>
+        <div class="category">
+            <a href="#all-category-checkbox-id" class="all-category flex-justify">
+                <span class="all-category-label">جميع الأقسام</span>
+            </a>
+
+            <a href="#real-estate-checkbox-id" class="real-estate flex-justify">
+                <span class="real-estate-label">عقارات</span>
+                    <button class="real-estate-arrow-for-checkbox" id="real-estate-arrow-for-checkbox-btn">&#160;&#160;&#160;</button>
+                </a>
+
+            <a href="#electronic-checkbox-id" class="electronic flex-justify">
+                <span class="electronic-label">الكترونيات</span>
+                    <button class="electronic-arrow-for-checkbox" id="electronic-arrow-for-checkbox-btn">&#160;&#160;&#160;</button>
+            </a>
+
+            <a href="#fashion-checkbox-id" class="fashion flex-justify">
+                <span class="fashion-label">موضة</span>
+                    <button class="fashion-arrow-for-checkbox" id="fashion-arrow-for-checkbox-btn">&#160;&#160;&#160;</button>
+            </a>
+
+            <a href="#car-checkbox-id" class="car flex-justify">
+                <span class="car-label">مركبات</span>
+                    <button class="car-arrow-for-checkbox" id="car-arrow-for-checkbox-btn">&#160;&#160;&#160;</button>
+            </a>
+        
+        </div>
+    </div>
+    <!-- <div class="search-container">
+        <form>
+            <input class="search-bar" type="search" placeholder="search in product">
+        </form>
+    </div> -->
+
+    <div id="real-estate-modal">
+        <div class="real-estate-modal-content">
+            <div class="real-estate-modal-header">
+                <span class="real-estate-modal-header-title">حدد لتسهيل عملية البحث...</span>
+                <span class="real-estate-close">&times;</span>
+            </div>
+            <form>
+                <div class="real-estate-modal-body">
+                    <div class="real-estate-modal-body-section-1">
+                        <h2>القسم الفرعي</h2>
+                        <div class="real-estate-modal-body-section-1-radio">
+                            <input type="radio" name="real-estate-section-1" id="real-estate-section-1-01">
+                            <label for="real-estate-section-1-01" >عقار سكني</label>
+                            <br>
+
+                            <input type="radio" name="real-estate-section-1" id="real-estate-section-1-02">
+
+                            <label for="real-estate-section-1-02">عقار تجاري</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-1" id="real-estate-section-1-03">
+                            <label for="real-estate-section-1-03">عقار أراضي</label>
+                        </div>
+                    </div>
+                    <div class="real-estate-modal-body-section-2">
+                        <h2>النوع</h2>
+                        <div class="real-estate-modal-body-section-2-radio">
+                            <input type="radio" name="real-estate-section-2" id="real-estate-section-2-04">
+                            <label for="real-estate-section-2-04" >بيوت ومنازل</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-2" id="real-estate-section-2-05">
+                            <label for="real-estate-section-2-05">عمارات</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-2" id="real-estate-section-2-06">
+                            <label for="real-estate-section-2-06">شقق</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-2" id="real-estate-section-2-07">
+                            <label for="real-estate-section-2-07">فلل وقصور</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-2" id="real-estate-section-2-08">
+                            <label for="real-estate-section-2-08">مزارع وشاليهات</label>
+                        </div>
+                    </div>
+                    <div class="real-estate-modal-body-section-3">
+                        <h2>المحافظة</h2>
+                        <div class="real-estate-modal-body-section-3-radio">
+                            <input type="radio" name="real-estate-section-3" id="real-estate-section-3-09" >
+                            <label for="real-estate-section-3-09" >عمان</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-3" id="real-estate-section-3-10">
+                            <label for="real-estate-section-3-10">الزرقاء</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-3" id="real-estate-section-3-11">
+                            <label for="real-estate-section-3-11">إربد</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-3" id="real-estate-section-3-12">
+                            <label for="real-estate-section-3-12">السلط</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-3" id="real-estate-section-3-13">
+                            <label for="real-estate-section-3-13">المفرق</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-3" id="real-estate-section-3-14">
+                            <label for="real-estate-section-3-14">جرش</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-3" id="real-estate-section-3-15">
+                            <label for="real-estate-section-3-15">عجلون</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-3" id="real-estate-section-3-16">
+                            <label for="real-estate-section-3-16">معان</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-3" id="real-estate-section-3-17">
+                            <label for="real-estate-section-3-17">الطفيلة</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-3" id="real-estate-section-3-18">
+                            <label for="real-estate-section-3-18">العقبة</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-3" id="real-estate-section-3-19">
+                            <label for="real-estate-section-3-19">الكرك</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-3" id="real-estate-section-3-20">
+                            <label for="real-estate-section-3-20">مادبا</label>
+                        </div>
+                    </div>
+                    <div class="real-estate-modal-body-section-4">
+                        <h2>عدد الغرف</h2>
+                        <div class="real-estate-modal-body-section-4-radio">
+                            <input type="radio" name="real-estate-section-4" id="real-estate-section-4-20" >
+                            <label for="real-estate-section-4-20" >1</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-4" id="real-estate-section-4-21">
+                            <label for="real-estate-section-4-21">2</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-4" id="real-estate-section-4-22">
+                            <label for="real-estate-section-4-22">3</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-4" id="real-estate-section-4-23">
+                            <label for="real-estate-section-4-23">4</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-4" id="real-estate-section-4-24">
+                            <label for="real-estate-section-4-24">5</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-4" id="real-estate-section-4-24a">
+                            <label for="real-estate-section-4-24a">أكثر من 5</label>
+                        </div>
+                    </div>
+                    <div class="real-estate-modal-body-section-5">
+                        <h2>عدد الحمامات</h2>
+                        <div class="real-estate-modal-body-section-5-radio">
+                            <input type="radio" name="real-estate-section-5" id="real-estate-section-5-25" >
+                            <label for="real-estate-section-5-25" >1</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-5" id="real-estate-section-5-26">
+                            <label for="real-estate-section-5-26">2</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-5" id="real-estate-section-5-27">
+                            <label for="real-estate-section-5-27">3</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-5" id="real-estate-section-5-28">
+                            <label for="real-estate-section-5-28">أكثر من 3</label>
+                        </div>
+                    </div>
+                    <div class="real-estate-modal-body-section-6">
+                        <h2>عدد الطوابق</h2>
+                        <div class="real-estate-modal-body-section-6-radio">
+                            <input type="radio" name="real-estate-section-6" id="real-estate-section-6-29" >
+                            <label for="real-estate-section-6-29" >1</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-6" id="real-estate-section-6-30">
+                            <label for="real-estate-section-6-30">2</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-6" id="real-estate-section-6-31">
+                            <label for="real-estate-section-6-31">أكثر من 2</label>
+                        </div>
+                    </div>
+                    <div class="real-estate-modal-body-section-7">
+                        <h2>مساحة الأرض</h2>
+                        <div class="real-estate-modal-body-section-7-radio">
+                            <input type="radio" name="real-estate-section-7" id="real-estate-section-7-32" >
+                            <label for="real-estate-section-7-32" >أقل من 100م</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-7" id="real-estate-section-7-33">
+                            <label for="real-estate-section-7-33">100م - 200م</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-7" id="real-estate-section-7-34">
+                            <label for="real-estate-section-7-34">200م - 300م</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-7" id="real-estate-section-7-35">
+                            <label for="real-estate-section-7-35">300م - 400م</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-7" id="real-estate-section-7-36">
+                            <label for="real-estate-section-7-36">400م - 500م</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-7" id="real-estate-section-7-37">
+                            <label for="real-estate-section-7-37">أكثر من 500م</label>
+                        </div>
+                    </div>
+                    <div class="real-estate-modal-body-section-8">
+                        <h2>مساحة البناء</h2>
+                        <div class="real-estate-modal-body-section-8-radio">
+                            <input type="radio" name="real-estate-section-8" id="real-estate-section-8-38" >
+                            <label for="real-estate-section-8-38" >أقل من 100م</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-8" id="real-estate-section-8-39">
+                            <label for="real-estate-section-8-39">100م - 200م</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-8" id="real-estate-section-8-40">
+                            <label for="real-estate-section-8-40">200م - 300م</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-8" id="real-estate-section-8-41">
+                            <label for="real-estate-section-8-41">300م - 400م</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-8" id="real-estate-section-8-42">
+                            <label for="real-estate-section-8-42">400م - 500م</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-8" id="real-estate-section-8-43">
+                            <label for="real-estate-section-8-43">أكثر من 500م</label>
+                        </div>
+                    </div>
+                    <div class="real-estate-modal-body-section-9">
+                        <h2>سنة الإعمار</h2>
+                        <div class="real-estate-modal-body-section-9-radio">
+                            <input type="radio" name="real-estate-section-9" id="real-estate-section-9-44" >
+                            <label for="real-estate-section-9-44" >قبل سنة 2000</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-9" id="real-estate-section-9-45">
+                            <label for="real-estate-section-9-45">2000 - 2005</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-9" id="real-estate-section-9-46">
+                            <label for="real-estate-section-9-46">2005 - 2010</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-9" id="real-estate-section-9-47">
+                            <label for="real-estate-section-9-47">2010 - 2015</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-9" id="real-estate-section-9-48">
+                            <label for="real-estate-section-9-48">2015 - 2020</label>
+                            <br>
+                            <input type="radio" name="real-estate-section-9" id="real-estate-section-9-49">
+                            <label class="ss"for="real-estate-section-9-49">بعد سنة 2020</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="real-estate-modal-footer">
+                    <input type="submit" name="save" value="حفظ المعلومات">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="electronic-modal">
+        <div class="electronic-modal-content">
+            <div class="electronic-modal-header">
+                <span class="electronic-modal-header-title">حدد لتسهيل عملية البحث...</span>
+                <span class="electronic-close">&times;</span>
+            </div>
+            <form>
+                <div class="electronic-modal-body">
+                    <div class="electronic-modal-body-section-1">
+                        <h2>القسم الفرعي</h2>
+                        <div class="electronic-modal-body-section-1-radio">
+                            <input type="radio" name="electronic-section-1" id="electronic-section-1-01">
+                            <label for="electronic-section-1-01" >تلفون - ايباد</label>
+                            <br>
+                            <input type="radio" name="electronic-section-1" id="electronic-section-1-02">
+                            <label for="electronic-section-1-02">لابتوب - كمبيوتر</label>
+                            <br>
+                            <input type="radio" name="electronic-section-1" id="electronic-section-1-03">
+                            <label for="electronic-section-1-03">تلفزيون - شاشة</label>
+                            <br>
+                            <input type="radio" name="electronic-section-1" id="electronic-section-1-03">
+                            <label for="electronic-section-1-03">كاميرا</label>
+                        </div>
+                    </div>
+                    <div class="electronic-modal-body-section-2">
+                        <h2>النوع</h2>
+                        <div class="electronic-modal-body-section-2-radio">
+                            <input type="radio" name="electronic-section-2" id="electronic-section-2-04">
+                            <label for="electronic-section-2-04" >ابل</label>
+                            <br>
+                            <input type="radio" name="electronic-section-2" id="electronic-section-2-05">
+                            <label for="electronic-section-2-05">سامسونج</label>
+                            <br>
+                            <input type="radio" name="electronic-section-2" id="electronic-section-2-06">
+                            <label for="electronic-section-2-06">هواوي</label>
+                            <br>
+                            <input type="radio" name="electronic-section-2" id="electronic-section-2-07">
+                            <label for="electronic-section-2-07">نوكيا</label>
+                            <br>
+                            <input type="radio" name="electronic-section-2" id="electronic-section-2-08">
+                            <label for="electronic-section-2-08">اخرى..</label>
+                        </div>
+                    </div>
+                    <div class="electronic-modal-body-section-3">
+                        <h2>المحافظة</h2>
+                        <div class="electronic-modal-body-section-3-radio">
+                            <input type="radio" name="electronic-section-3" id="electronic-section-3-09" >
+                            <label for="electronic-section-3-09" >عمان</label>
+                            <br>
+                            <input type="radio" name="electronic-section-3" id="electronic-section-3-10">
+                            <label for="electronic-section-3-10">الزرقاء</label>
+                            <br>
+                            <input type="radio" name="electronic-section-3" id="electronic-section-3-11">
+                            <label for="electronic-section-3-11">إربد</label>
+                            <br>
+                            <input type="radio" name="electronic-section-3" id="electronic-section-3-12">
+                            <label for="electronic-section-3-12">السلط</label>
+                            <br>
+                            <input type="radio" name="electronic-section-3" id="electronic-section-3-13">
+                            <label for="electronic-section-3-13">المفرق</label>
+                            <br>
+                            <input type="radio" name="electronic-section-3" id="electronic-section-3-14">
+                            <label for="electronic-section-3-14">جرش</label>
+                            <br>
+                            <input type="radio" name="electronic-section-3" id="electronic-section-3-15">
+                            <label for="electronic-section-3-15">عجلون</label>
+                            <br>
+                            <input type="radio" name="electronic-section-3" id="electronic-section-3-16">
+                            <label for="electronic-section-3-16">معان</label>
+                            <br>
+                            <input type="radio" name="electronic-section-3" id="electronic-section-3-17">
+                            <label for="electronic-section-3-17">الطفيلة</label>
+                            <br>
+                            <input type="radio" name="electronic-section-3" id="electronic-section-3-18">
+                            <label for="electronic-section-3-18">العقبة</label>
+                            <br>
+                            <input type="radio" name="electronic-section-3" id="electronic-section-3-19">
+                            <label for="electronic-section-3-19">الكرك</label>
+                            <br>
+                            <input type="radio" name="electronic-section-3" id="electronic-section-3-20">
+                            <label for="electronic-section-3-20">مادبا</label>
+                        </div>
+                    </div>
+                    <div class="electronic-modal-body-section-4">
+                        <h2>الحالة</h2>
+                        <div class="electronic-modal-body-section-4-radio">
+                            <input type="radio" name="electronic-section-4" id="electronic-section-4-20" >
+                            <label for="electronic-section-4-20" >جديد</label>
+                            <br>
+                            <input type="radio" name="electronic-section-4" id="electronic-section-4-21">
+                            <label for="electronic-section-4-21">مستعمل</label>
+                        </div>
+                    </div>
+                    <div class="electronic-modal-body-section-5">
+                        <h2>------------- </h2>
+                        <div class="electronic-modal-body-section-5-radio">
+                            <!-- <input type="radio" name="electronic-section-5" id="electronic-section-5-25" >
+                            <label for="electronic-section-5-25" >1</label>
+                            <br>
+                            <input type="radio" name="electronic-section-5" id="electronic-section-5-26">
+                            <label for="electronic-section-5-26">2</label>
+                            <br>
+                            <input type="radio" name="electronic-section-5" id="electronic-section-5-27">
+                            <label for="electronic-section-5-27">3</label>
+                            <br>
+                            <input type="radio" name="electronic-section-5" id="electronic-section-5-28">
+                            <label for="electronic-section-5-28">أكثر من 3</label> -->
+                        </div>
+                    </div>
+                    <div class="electronic-modal-body-section-6">
+                        <h2>----------- </h2>
+                        <div class="electronic-modal-body-section-6-radio">
+                            <!-- <input type="radio" name="electronic-section-6" id="electronic-section-6-29" >
+                            <label for="electronic-section-6-29" >1</label>
+                            <br>
+                            <input type="radio" name="electronic-section-6" id="electronic-section-6-30">
+                            <label for="electronic-section-6-30">2</label>
+                            <br>
+                            <input type="radio" name="electronic-section-6" id="electronic-section-6-31">
+                            <label for="electronic-section-6-31">أكثر من 2</label> -->
+                        </div>
+                    </div>
+                    <div class="electronic-modal-body-section-7">
+                        <h2>اللون</h2>
+                        <div class="electronic-modal-body-section-7-radio">
+                            <input type="radio" name="electronic-section-7" id="electronic-section-7-32" >
+                            <label for="electronic-section-7-32" >أبيض</label>
+                            <br>
+                            <input type="radio" name="electronic-section-7" id="electronic-section-7-33">
+                            <label for="electronic-section-7-33">أسود</label>
+                            <br>
+                            <input type="radio" name="electronic-section-7" id="electronic-section-7-34">
+                            <label for="electronic-section-7-34">أحمر</label>
+                            <br>
+                            <input type="radio" name="electronic-section-7" id="electronic-section-7-35">
+                            <label for="electronic-section-7-35">أزرق</label>
+                            <br>
+                            <input type="radio" name="electronic-section-7" id="electronic-section-7-36">
+                            <label for="electronic-section-7-36">سكني</label>
+                            <br>
+                            <input type="radio" name="electronic-section-7" id="electronic-section-7-37">
+                            <label for="electronic-section-7-37">أخرى..</label>
+                        </div>
+                    </div>
+                    <div class="electronic-modal-body-section-8">
+                        <h2> ------</h2>
+                        <div class="electronic-modal-body-section-8-radio">
+                            <!-- <input type="radio" name="electronic-section-8" id="electronic-section-8-38" >
+                            <label for="electronic-section-8-38" >أقل من 100م</label>
+                            <br>
+                            <input type="radio" name="electronic-section-8" id="electronic-section-8-39">
+                            <label for="electronic-section-8-39">100م - 200م</label>
+                            <br>
+                            <input type="radio" name="electronic-section-8" id="electronic-section-8-40">
+                            <label for="electronic-section-8-40">200م - 300م</label>
+                            <br>
+                            <input type="radio" name="electronic-section-8" id="electronic-section-8-41">
+                            <label for="electronic-section-8-41">300م - 400م</label>
+                            <br>
+                            <input type="radio" name="electronic-section-8" id="electronic-section-8-42">
+                            <label for="electronic-section-8-42">400م - 500م</label>
+                            <br>
+                            <input type="radio" name="electronic-section-8" id="electronic-section-8-43">
+                            <label for="electronic-section-8-43">أكثر من 500م</label> -->
+                        </div>
+                    </div>
+                    <div class="electronic-modal-body-section-9">
+                        <h2>سعة التخزين</h2>
+                        <div class="electronic-modal-body-section-9-radio">
+                            <input type="radio" name="electronic-section-9" id="electronic-section-9-44" >
+                            <label for="electronic-section-9-44" >أقل من 32جيجا</label>
+                            <br>
+                            <input type="radio" name="electronic-section-9" id="electronic-section-9-45">
+                            <label for="electronic-section-9-45">64جيجا</label>
+                            <br>
+                            <input type="radio" name="electronic-section-9" id="electronic-section-9-46">
+                            <label for="electronic-section-9-46">128جيجا</label>
+                            <br>
+                            <input type="radio" name="electronic-section-9" id="electronic-section-9-47">
+                            <label for="electronic-section-9-47">256جيجا</label>
+                            <br>
+                            <input type="radio" name="electronic-section-9" id="electronic-section-9-48">
+                            <label for="electronic-section-9-48">512جيجا</label>
+                            <br>
+                            <input type="radio" name="electronic-section-9" id="electronic-section-9-49">
+                            <label class="ss"for="electronic-section-9-49">أكثر من 512جيجا</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="electronic-modal-footer">
+                    <input type="submit" name="save" value="حفظ المعلومات">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="fashion-modal">
+        <div class="fashion-modal-content">
+            <div class="fashion-modal-header">
+                <span class="fashion-modal-header-title">حدد لتسهيل عملية البحث...</span>
+                <span class="fashion-close">&times;</span>
+            </div>
+            <form>
+                <div class="fashion-modal-body">
+                    <div class="fashion-modal-body-section-1">
+                        <h2>القسم الفرعي</h2>
+                        <div class="fashion-modal-body-section-1-radio">
+                            <input type="radio" name="fashion-section-1" id="fashion-section-1-01">
+                            <label for="fashion-section-1-01" >نسائي</label>
+                            <br>
+                            <input type="radio" name="fashion-section-1" id="fashion-section-1-02">
+                            <label for="fashion-section-1-02">رجالي</label>
+                        </div>
+                    </div>
+                    <div class="fashion-modal-body-section-2">
+                        <h2>النوع</h2>
+                        <div class="fashion-modal-body-section-2-radio">
+                            <input type="radio" name="fashion-section-2" id="fashion-section-2-04">
+                            <label for="fashion-section-2-04" >قميص</label>
+                            <br>
+                            <input type="radio" name="fashion-section-2" id="fashion-section-2-05">
+                            <label for="fashion-section-2-05">بنطال</label>
+                            <br>
+                            <input type="radio" name="fashion-section-2" id="fashion-section-2-06">
+                            <label for="fashion-section-2-06">أحذية</label>
+                            <br>
+                            <input type="radio" name="fashion-section-2" id="fashion-section-2-07">
+                            <label for="fashion-section-2-07">أخرى..</label>
+                        </div>
+                    </div>
+                    <div class="fashion-modal-body-section-3">
+                        <h2>المحافظة</h2>
+                        <div class="fashion-modal-body-section-3-radio">
+                            <input type="radio" name="fashion-section-3" id="fashion-section-3-09" >
+                            <label for="fashion-section-3-09" >عمان</label>
+                            <br>
+                            <input type="radio" name="fashion-section-3" id="fashion-section-3-10">
+                            <label for="fashion-section-3-10">الزرقاء</label>
+                            <br>
+                            <input type="radio" name="fashion-section-3" id="fashion-section-3-11">
+                            <label for="fashion-section-3-11">إربد</label>
+                            <br>
+                            <input type="radio" name="fashion-section-3" id="fashion-section-3-12">
+                            <label for="fashion-section-3-12">السلط</label>
+                            <br>
+                            <input type="radio" name="fashion-section-3" id="fashion-section-3-13">
+                            <label for="fashion-section-3-13">المفرق</label>
+                            <br>
+                            <input type="radio" name="fashion-section-3" id="fashion-section-3-14">
+                            <label for="fashion-section-3-14">جرش</label>
+                            <br>
+                            <input type="radio" name="fashion-section-3" id="fashion-section-3-15">
+                            <label for="fashion-section-3-15">عجلون</label>
+                            <br>
+                            <input type="radio" name="fashion-section-3" id="fashion-section-3-16">
+                            <label for="fashion-section-3-16">معان</label>
+                            <br>
+                            <input type="radio" name="fashion-section-3" id="fashion-section-3-17">
+                            <label for="fashion-section-3-17">الطفيلة</label>
+                            <br>
+                            <input type="radio" name="fashion-section-3" id="fashion-section-3-18">
+                            <label for="fashion-section-3-18">العقبة</label>
+                            <br>
+                            <input type="radio" name="fashion-section-3" id="fashion-section-3-19">
+                            <label for="fashion-section-3-19">الكرك</label>
+                            <br>
+                            <input type="radio" name="fashion-section-3" id="fashion-section-3-20">
+                            <label for="fashion-section-3-20">مادبا</label>
+                        </div>
+                    </div>
+                    <div class="fashion-modal-body-section-4">
+                        <h2>الحالة</h2>
+                        <div class="fashion-modal-body-section-4-radio">
+                            <input type="radio" name="fashion-section-4" id="fashion-section-4-20" >
+                            <label for="fashion-section-4-20" >جديد</label>
+                            <br>
+                            <input type="radio" name="fashion-section-4" id="fashion-section-4-21">
+                            <label for="fashion-section-4-21">مستعمل</label>
+                        </div>
+                    </div>
+                    <div class="fashion-modal-body-section-5">
+                        <h2>الفئة</h2>
+                        <div class="fashion-modal-body-section-5-radio">
+                            <input type="radio" name="fashion-section-5" id="fashion-section-5-25" >
+                            <label for="fashion-section-5-25" >رسمي</label>
+                            <br>
+                            <input type="radio" name="fashion-section-5" id="fashion-section-5-26">
+                            <label for="fashion-section-5-26">رياضي</label>
+                            <br>
+                            <input type="radio" name="fashion-section-5" id="fashion-section-5-27">
+                            <label for="fashion-section-5-27">بيتي</label>
+                            <br>
+                            <input type="radio" name="fashion-section-5" id="fashion-section-5-28">
+                            <label for="fashion-section-5-28">أخرى..</label>
+                        </div>
+                    </div>
+                    <div class="fashion-modal-body-section-6">
+                        <h2>------ </h2>
+                        <div class="fashion-modal-body-section-6-radio">
+                            <!-- <input type="radio" name="fashion-section-6" id="fashion-section-6-29" >
+                            <label for="fashion-section-6-29" >1</label>
+                            <br>
+                            <input type="radio" name="fashion-section-6" id="fashion-section-6-30">
+                            <label for="fashion-section-6-30">2</label>
+                            <br>
+                            <input type="radio" name="fashion-section-6" id="fashion-section-6-31">
+                            <label for="fashion-section-6-31">أكثر من 2</label> -->
+                        </div>
+                    </div>
+                    <div class="fashion-modal-body-section-7">
+                        <h2>اللون </h2>
+                        <div class="fashion-modal-body-section-7-radio">
+                            <input type="radio" name="fashion-section-7" id="fashion-section-7-32" >
+                            <label for="fashion-section-7-32" >أبيض</label>
+                            <br>
+                            <input type="radio" name="fashion-section-7" id="fashion-section-7-33">
+                            <label for="fashion-section-7-33">أسود</label>
+                            <br>
+                            <input type="radio" name="fashion-section-7" id="fashion-section-7-34">
+                            <label for="fashion-section-7-34">أحمر</label>
+                            <br>
+                            <input type="radio" name="fashion-section-7" id="fashion-section-7-35">
+                            <label for="fashion-section-7-35">أزرق</label>
+                            <br>
+                            <input type="radio" name="fashion-section-7" id="fashion-section-7-36">
+                            <label for="fashion-section-7-36">أخضر</label>
+                            <br>
+                            <input type="radio" name="fashion-section-7" id="fashion-section-7-37">
+                            <label for="fashion-section-7-37">أخرى..</label>
+                        </div>
+                    </div>
+                    <div class="fashion-modal-body-section-8">
+                        <h2>القياس</h2>
+                        <div class="fashion-modal-body-section-8-radio">
+                            <input type="radio" name="fashion-section-8" id="fashion-section-8-38" >
+                            <label for="fashion-section-8-38" >صغير</label>
+                            <br>
+                            <input type="radio" name="fashion-section-8" id="fashion-section-8-39">
+                            <label for="fashion-section-8-39">متوسط</label>
+                            <br>
+                            <input type="radio" name="fashion-section-8" id="fashion-section-8-40">
+                            <label for="fashion-section-8-40">كبير</label>
+                            <br>
+                            <input type="radio" name="fashion-section-8" id="fashion-section-8-41">
+                            <label for="fashion-section-8-41">كبير جدا</label>
+                            <br>
+                            <input type="radio" name="fashion-section-8" id="fashion-section-8-42">
+                            <label for="fashion-section-8-42">أخرى..</label>
+                        </div>
+                    </div>
+                    <div class="fashion-modal-body-section-9">
+                        <h2>الماركة </h2>
+                        <div class="fashion-modal-body-section-9-radio">
+                            <input type="radio" name="fashion-section-9" id="fashion-section-9-44" >
+                            <label for="fashion-section-9-44" >أديداس</label>
+                            <br>
+                            <input type="radio" name="fashion-section-9" id="fashion-section-9-45">
+                            <label for="fashion-section-9-45">لاكوست</label>
+                            <br>
+                            <input type="radio" name="fashion-section-9" id="fashion-section-9-46">
+                            <label for="fashion-section-9-46">ريبوك</label>
+                            <br>
+                            <input type="radio" name="fashion-section-9" id="fashion-section-9-47">
+                            <label for="fashion-section-9-47">نايك</label>
+                            <br>
+                            <input type="radio" name="fashion-section-9" id="fashion-section-9-48">
+                            <label for="fashion-section-9-48">أخرى..</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="fashion-modal-footer">
+                    <input type="submit" name="save" value="حفظ المعلومات">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="car-modal">
+        <div class="car-modal-content">
+            <div class="car-modal-header">
+                <span class="car-modal-header-title">حدد لتسهيل عملية البحث...</span>
+                <span class="car-close">&times;</span>
+            </div>
+            <form>
+                <div class="car-modal-body">
+                    <div class="car-modal-body-section-1">
+                        <h2>القسم الفرعي</h2>
+                        <div class="car-modal-body-section-1-radio">
+                            <input type="radio" name="car-section-1" id="car-section-1-01">
+                            <label for="car-section-1-01" >سيارات</label>
+                            <br>
+                            <input type="radio" name="car-section-1" id="car-section-1-02">
+                            <label for="car-section-1-02">دراجات</label>
+                            <br>
+                            <input type="radio" name="car-section-1" id="car-section-1-03">
+                            <label for="car-section-1-03">شاحنات</label>
+                        </div>
+                    </div>
+                    <div class="car-modal-body-section-2">
+                        <h2>النوع</h2>
+                        <div class="car-modal-body-section-2-radio">
+                            <input type="radio" name="car-section-2" id="car-section-2-04">
+                            <label for="car-section-2-04" >مرسيدس</label>
+                            <br>
+                            <input type="radio" name="car-section-2" id="car-section-2-05">
+                            <label for="car-section-2-05">أودي</label>
+                            <br>
+                            <input type="radio" name="car-section-2" id="car-section-2-06">
+                            <label for="car-section-2-06">تويوتا</label>
+                            <br>
+                            <input type="radio" name="car-section-2" id="car-section-2-07">
+                            <label for="car-section-2-07">نيسان</label>
+                            <br>
+                            <input type="radio" name="car-section-2" id="car-section-2-08">
+                            <label for="car-section-2-08">أخرى..</label>
+                        </div>
+                    </div>
+                    <div class="car-modal-body-section-3">
+                        <h2>المحافظة</h2>
+                        <div class="car-modal-body-section-3-radio">
+                            <input type="radio" name="car-section-3" id="car-section-3-09" >
+                            <label for="car-section-3-09" >عمان</label>
+                            <br>
+                            <input type="radio" name="car-section-3" id="car-section-3-10">
+                            <label for="car-section-3-10">الزرقاء</label>
+                            <br>
+                            <input type="radio" name="car-section-3" id="car-section-3-11">
+                            <label for="car-section-3-11">إربد</label>
+                            <br>
+                            <input type="radio" name="car-section-3" id="car-section-3-12">
+                            <label for="car-section-3-12">السلط</label>
+                            <br>
+                            <input type="radio" name="car-section-3" id="car-section-3-13">
+                            <label for="car-section-3-13">المفرق</label>
+                            <br>
+                            <input type="radio" name="car-section-3" id="car-section-3-14">
+                            <label for="car-section-3-14">جرش</label>
+                            <br>
+                            <input type="radio" name="car-section-3" id="car-section-3-15">
+                            <label for="car-section-3-15">عجلون</label>
+                            <br>
+                            <input type="radio" name="car-section-3" id="car-section-3-16">
+                            <label for="car-section-3-16">معان</label>
+                            <br>
+                            <input type="radio" name="car-section-3" id="car-section-3-17">
+                            <label for="car-section-3-17">الطفيلة</label>
+                            <br>
+                            <input type="radio" name="car-section-3" id="car-section-3-18">
+                            <label for="car-section-3-18">العقبة</label>
+                            <br>
+                            <input type="radio" name="car-section-3" id="car-section-3-19">
+                            <label for="car-section-3-19">الكرك</label>
+                            <br>
+                            <input type="radio" name="car-section-3" id="car-section-3-20">
+                            <label for="car-section-3-20">مادبا</label>
+                        </div>
+                    </div>
+                    <div class="car-modal-body-section-4">
+                        <h2>سعة المحرك(cc)</h2>
+                        <div class="car-modal-body-section-4-radio">
+                            <input type="radio" name="car-section-4" id="car-section-4-20" >
+                            <label for="car-section-4-20" >أقل من 1000</label>
+                            <br>
+                            <input type="radio" name="car-section-4" id="car-section-4-21">
+                            <label for="car-section-4-21">1000 - 2000</label>
+                            <br>
+                            <input type="radio" name="car-section-4" id="car-section-4-22">
+                            <label for="car-section-4-22">2000 - 3000</label>
+                            <br>
+                            <input type="radio" name="car-section-4" id="car-section-4-23">
+                            <label for="car-section-4-23">3000 - 4000</label>
+                            <br>
+                            <input type="radio" name="car-section-4" id="car-section-4-24">
+                            <label for="car-section-4-24">أكثر من 4000</label>
+                        </div>
+                    </div>
+                    <div class="car-modal-body-section-5">
+                        <h2>اللون</h2>
+                        <div class="car-modal-body-section-5-radio">
+                            <input type="radio" name="car-section-5" id="car-section-5-25" >
+                            <label for="car-section-5-25" >أبيض</label>
+                            <br>
+                            <input type="radio" name="car-section-5" id="car-section-5-26">
+                            <label for="car-section-5-26">أسود</label>
+                            <br>
+                            <input type="radio" name="car-section-5" id="car-section-5-27">
+                            <label for="car-section-5-27">سكني</label>
+                            <br>
+                            <input type="radio" name="car-section-5" id="car-section-5-28">
+                            <label for="car-section-5-28">خمري</label>
+                            <br>
+                            <input type="radio" name="car-section-5" id="car-section-5-28">
+                            <label for="car-section-5-28">أزرق</label>
+                            <br>
+                            <input type="radio" name="car-section-5" id="car-section-5-28">
+                            <label for="car-section-5-28">أخرى..</label>
+                        </div>
+                    </div>
+                    <div class="car-modal-body-section-6">
+                        <h2>الحالة </h2>
+                        <div class="car-modal-body-section-6-radio">
+                            <input type="radio" name="car-section-6" id="car-section-6-29" >
+                            <label for="car-section-6-29" >جديد</label>
+                            <br>
+                            <input type="radio" name="car-section-6" id="car-section-6-30">
+                            <label for="car-section-6-30">مستعمل</label>
+                        </div>
+                    </div>
+                    <div class="car-modal-body-section-7">
+                        <h2>قوة الأحصنة</h2>
+                        <div class="car-modal-body-section-7-radio">
+                            <input type="radio" name="car-section-7" id="car-section-7-32" >
+                            <label for="car-section-7-32" >أقل من 100</label>
+                            <br>
+                            <input type="radio" name="car-section-7" id="car-section-7-33">
+                            <label for="car-section-7-33">100 - 200</label>
+                            <br>
+                            <input type="radio" name="car-section-7" id="car-section-7-34">
+                            <label for="car-section-7-34">200 - 300</label>
+                            <br>
+                            <input type="radio" name="car-section-7" id="car-section-7-35">
+                            <label for="car-section-7-35">300 - 400</label>
+                            <br>
+                            <input type="radio" name="car-section-7" id="car-section-7-36">
+                            <label for="car-section-7-36">أكثر من 400</label>
+                        </div>
+                    </div>
+                    <div class="car-modal-body-section-8">
+                        <h2>عدد الأسطوانات</h2>
+                        <div class="car-modal-body-section-8-radio">
+                            <input type="radio" name="car-section-8" id="car-section-8-38" >
+                            <label for="car-section-8-38" >4</label>
+                            <br>
+                            <input type="radio" name="car-section-8" id="car-section-8-39">
+                            <label for="car-section-8-39">6</label>
+                            <br>
+                            <input type="radio" name="car-section-8" id="car-section-8-40">
+                            <label for="car-section-8-40">8</label>
+                            <br>
+                            <input type="radio" name="car-section-8" id="car-section-8-41">
+                            <label for="car-section-8-41">10</label>
+                            <br>
+                            <input type="radio" name="car-section-8" id="car-section-8-42">
+                            <label for="car-section-8-42">12</label>
+                            <br>
+                            <input type="radio" name="car-section-8" id="car-section-8-43">
+                            <label for="car-section-8-43">أخرى..</label>
+                        </div>
+                    </div>
+                    <div class="car-modal-body-section-9">
+                        <h2>سنة الصنع</h2>
+                        <div class="car-modal-body-section-9-radio">
+                            <input type="radio" name="car-section-9" id="car-section-9-44" >
+                            <label for="car-section-9-44" >قبل سنة 2000</label>
+                            <br>
+                            <input type="radio" name="car-section-9" id="car-section-9-45">
+                            <label for="car-section-9-45">2000 - 2005</label>
+                            <br>
+                            <input type="radio" name="car-section-9" id="car-section-9-46">
+                            <label for="car-section-9-46">2005 - 2010</label>
+                            <br>
+                            <input type="radio" name="car-section-9" id="car-section-9-47">
+                            <label for="car-section-9-47">2010 - 2015</label>
+                            <br>
+                            <input type="radio" name="car-section-9" id="car-section-9-48">
+                            <label for="car-section-9-48">2015 - 2020</label>
+                            <br>
+                            <input type="radio" name="car-section-9" id="car-section-9-49">
+                            <label class="ss"for="car-section-9-49">بعد سنة 2020</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-modal-footer">
+                    <input type="submit" name="save" value="حفظ المعلومات">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="left-side">
+        <div class="product-container"  id="all-category-checkbox-id">
+            <table class="porduct-table" >
+                <tr>
+                    <td class="product-1">
+                        <a href="../the Bidding/the bidding.html" target="_blank">
+                            <table class="product-inner-table-img">
+                                <tr>
+                                    <td >
+                                        <img class="inner-table-img" src="../images/Real-Estate-SEO.jpg">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="product-name-and-info">
+                                <tr>
+                                    <td colspan="5" class="product-main-name">بيت مستقل مطل جميل للبيع</td>
+                                </tr>
+                                <tr>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                </tr>
+                                <tr>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="other-product-info-label-bidding-time">الوقت الباقي للمزاد</td>
+                                    <td class="other-product-info-bidding-time">12:33:42
+                                    </td>
+                                </tr>
+                            </table>
+                            <a href="../the Bidding/the bidding.html" class="left-side-of-the-product" target="_blank">
+                                <a href="../the seller profile/the seller profile.html" class="left-side-of-the-product-header" target="_blank">
+                                    <img class="seller-profile-pic" src="../images/another-avatar-test.jpg">
+                                    <span class="seller-name">random name</span>
+                                </a>
+                                <a href="../the Bidding/the bidding.html" class="left-side-of-the-product-bottom" target="_blank">للمزايدة</a>
+                            </a>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="product-2">
+                        <a href="../the Bidding/the bidding.html" target="_blank">
+                            <table class="product-inner-table-img">
+                                <tr>
+                                    <td >
+                                        <img class="inner-table-img" src="../images/images.png">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="product-name-and-info">
+                                <tr>
+                                    <td colspan="5" class="product-main-name">بيت مستقل مطل جميل للبيع</td>
+                                </tr>
+                                <tr>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                </tr>
+                                <tr>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="other-product-info-label-bidding-time">الوقت الباقي للمزاد</td>
+                                    <td class="other-product-info-bidding-time">12:12:59</td>
+                                </tr>
+                            </table>
+                            <a href="../the Bidding/the bidding.html" class="left-side-of-the-product" target="_blank">
+                                <a href="../the seller profile/the seller profile.html" class="left-side-of-the-product-header" target="_blank">
+                                    <img class="seller-profile-pic" src="../images/another-avatar-test.jpg">
+                                    <span class="seller-name">random name</span>
+                                </a>
+                                <a href="../the Bidding/the bidding.html" class="left-side-of-the-product-bottom" target="_blank">للمزايدة</a>
+                            </a>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="product-3">
+                        <a href="../the Bidding/the bidding.html" target="_blank">
+                            <table class="product-inner-table-img">
+                                <tr>
+                                    <td >
+                                        <img class="inner-table-img" src="../images/luxury-fashion-logo-design-idea-vector-33579950.jpg">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="product-name-and-info">
+                                <tr>
+                                    <td colspan="5" class="product-main-name">بيت مستقل مطل جميل للبيع</td>
+                                </tr>
+                                <tr>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                </tr>
+                                <tr>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="other-product-info-label-bidding-time">الوقت الباقي للمزاد</td>
+                                    <td class="other-product-info-bidding-time">12:12:59</td>
+                                </tr>
+                            </table>
+                            <a href="../the Bidding/the bidding.html" class="left-side-of-the-product" target="_blank">
+                                <a href="../the seller profile/the seller profile.html" class="left-side-of-the-product-header" target="_blank">
+                                    <img class="seller-profile-pic" src="../images/another-avatar-test.jpg">
+                                    <span class="seller-name">random name</span>
+                                </a>
+                                <a href="../the Bidding/the bidding.html" class="left-side-of-the-product-bottom" target="_blank">للمزايدة</a>
+                            </a>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="product-4">
+                        <a href="../the Bidding/the bidding.html" target="_blank">
+                            <table class="product-inner-table-img">
+                                <tr>
+                                    <td >
+                                        <img class="inner-table-img" src="../images/auto-car-logo-template-icon-vector-21468702.jpg">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="product-name-and-info">
+                                <tr>
+                                    <td colspan="5" class="product-main-name">بيت مستقل مطل جميل للبيع</td>
+                                </tr>
+                                <tr>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                </tr>
+                                <tr>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="other-product-info-label-bidding-time">الوقت الباقي للمزاد</td>
+                                    <td class="other-product-info-bidding-time">12:12:59</td>
+                                </tr>
+                            </table>
+                            <a href="../the Bidding/the bidding.html" class="left-side-of-the-product" target="_blank">
+                                <a href="../the seller profile/the seller profile.html" class="left-side-of-the-product-header" target="_blank">
+                                    <img class="seller-profile-pic" src="../images/another-avatar-test.jpg">
+                                    <span class="seller-name">random name</span>
+                                </a>
+                                <a href="../the Bidding/the bidding.html" class="left-side-of-the-product-bottom" target="_blank">للمزايدة</a>
+                            </a>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="product-5">Product</td>
+                </tr>
+            </table>
+
+        </div>
+        <div class="product-container"  id="real-estate-checkbox-id">
+            <table class="porduct-table" >
+                <tr>
+                    <td class="product-1">
+                        <a href="../the Bidding/the bidding.html" target="_blank">
+                            <table class="product-inner-table-img">
+                                <tr>
+                                    <td >
+                                        <img class="inner-table-img" src="../images/Real-Estate-SEO.jpg">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="product-name-and-info">
+                                <tr>
+                                    <td colspan="5" class="product-main-name">بيت مستقل مطل جميل للبيع</td>
+                                </tr>
+                                <tr>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                </tr>
+                                <tr>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="other-product-info-label-bidding-min-price">أقل قيمة للمزايدة</td>
+                                    <td class="other-product-info-bidding-min-price">199.55$</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="other-product-info-label-bidding-time">الوقت الباقي للمزاد</td>
+                                    <td class="other-product-info-bidding-time">12:12:59</td>
+                                </tr>
+                            </table>
+                            <a href="../the Bidding/the bidding.html" class="left-side-of-the-product" target="_blank">
+                                <a href="../the seller profile/the seller profile.html" class="left-side-of-the-product-header" target="_blank">
+                                    <img class="seller-profile-pic" src="../images/test-avatar.jfif">
+                                    <span class="seller-name">random name</span>
+                                </a>
+                                <a href="../the Bidding/the bidding.html" class="left-side-of-the-product-bottom" target="_blank">للمزايدة</a>
+                            </a>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="product-2">Product</td>
+                </tr>
+                <tr>
+                    <td class="product-3">Product</td>
+                </tr>
+                <tr>
+                    <td class="product-4">Product</td>
+                </tr>
+                <tr>
+                    <td class="product-5">Product</td>
+                </tr>
+            </table>
+        </div>
+        <div class="product-container"  id="electronic-checkbox-id">
+            <table class="porduct-table" >
+                <tr>
+                    <td class="product-1">
+                        <a href="../the Bidding/the bidding.html" target="_blank">
+                            <table class="product-inner-table-img">
+                                <tr>
+                                    <td >
+                                        <img class="inner-table-img" src="../images/images.png">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="product-name-and-info">
+                                <tr>
+                                    <td colspan="5" class="product-main-name">بيت مستقل مطل جميل للبيع</td>
+                                </tr>
+                                <tr>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                </tr>
+                                <tr>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="other-product-info-label-bidding-time">الوقت الباقي للمزاد</td>
+                                    <td class="other-product-info-bidding-time">12:12:59</td>
+                                </tr>
+                            </table>
+                            <a href="../the Bidding/the bidding.html" class="left-side-of-the-product" target="_blank">
+                                <a href="../the seller profile/the seller profile.html" class="left-side-of-the-product-header" target="_blank">
+                                    <img class="seller-profile-pic" src="../images/test-avatar.jfif">
+                                    <span class="seller-name">random name</span>
+                                </a>
+                                <a href="../the Bidding/the bidding.html" class="left-side-of-the-product-bottom" target="_blank">للمزايدة</a>
+                            </a>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="product-2">Product</td>
+                </tr>
+                <tr>
+                    <td class="product-3">Product</td>
+                </tr>
+                <tr>
+                    <td class="product-4">Product</td>
+                </tr>
+                <tr>
+                    <td class="product-5">Product</td>
+                </tr>
+            </table>
+        </div>
+        <div class="product-container"  id="fashion-checkbox-id">
+            <table class="porduct-table" >
+                <tr>
+                    <td class="product-1">
+                        <a href="../the Bidding/the bidding.html" target="_blank">
+                            <table class="product-inner-table-img">
+                                <tr>
+                                    <td >
+                                        <img class="inner-table-img" src="../images/luxury-fashion-logo-design-idea-vector-33579950.jpg">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="product-name-and-info">
+                                <tr>
+                                    <td colspan="5" class="product-main-name">بيت مستقل مطل جميل للبيع</td>
+                                </tr>
+                                <tr>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                </tr>
+                                <tr>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="other-product-info-label-bidding-time">الوقت الباقي للمزاد</td>
+                                    <td class="other-product-info-bidding-time">12:12:59</td>
+                                </tr>
+                            </table>
+                            <a href="../the Bidding/the bidding.html" class="left-side-of-the-product" target="_blank">
+                                <a href="../the seller profile/the seller profile.html" class="left-side-of-the-product-header" target="_blank">
+                                    <img class="seller-profile-pic" src="../images/test-avatar.jfif">
+                                    <span class="seller-name">random name</span>
+                                </a>
+                                <a href="../the Bidding/the bidding.html" class="left-side-of-the-product-bottom" target="_blank">للمزايدة</a>
+                            </a>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="product-2">Product</td>
+                </tr>
+                <tr>
+                    <td class="product-3">Product</td>
+                </tr>
+                <tr>
+                    <td class="product-4">Product</td>
+                </tr>
+                <tr>
+                    <td class="product-5">Product</td>
+                </tr>
+            </table>
+        </div>
+        <div class="product-container"  id="car-checkbox-id">
+            <table class="porduct-table" >
+                <tr>
+                    <td class="product-1">
+                        <a href="../the Bidding/the bidding.html" target="_blank">
+                            <table class="product-inner-table-img">
+                                <tr>
+                                    <td >
+                                        <img class="inner-table-img" src="../images/auto-car-logo-template-icon-vector-21468702.jpg">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="product-name-and-info">
+                                <tr>
+                                    <td colspan="5" class="product-main-name">بيت مستقل مطل جميل للبيع</td>
+                                </tr>
+                                <tr>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                </tr>
+                                <tr>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                    <td class="other-product-info">عمان</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="other-product-info-label-bidding-time">الوقت الباقي للمزاد</td>
+                                    <td class="other-product-info-bidding-time">12:12:59</td>
+                                </tr>
+                            </table>
+                            <a href="../the Bidding/the bidding.html" class="left-side-of-the-product" target="_blank">
+                                <a href="../the seller profile/the seller profile.html" class="left-side-of-the-product-header" target="_blank">
+                                    <img class="seller-profile-pic" src="../images/test-avatar.jfif">
+                                    <span class="seller-name">random name</span>
+                                </a>
+                                <a href="../the Bidding/the bidding.html" class="left-side-of-the-product-bottom" target="_blank">للمزايدة</a>
+                            </a>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="product-2">Product</td>
+                </tr>
+                <tr>
+                    <td class="product-3">Product</td>
+                </tr>
+                <tr>
+                    <td class="product-4">Product</td>
+                </tr>
+                <tr>
+                    <td class="product-5">Product</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+
+    <footer id="communicate-guide-about"> 
+        <div class="upper-part"  id="about">
+            <div class="first-line-of-elements">
+                <button class="contact-us flex-align" id="contact-us-btn">
+                    <i class="contact-us-icon">link</i>
+                    <span class="contact-us-label">تواصل معنا</span>
+                </button>
+                <button class="about-us flex-align" id="about-us-btn">
+                    <i class="about-us-icon">info</i>
+                    <span class="about-us-label">حول</span>
+                </button>
+                <button class="guide-and-advice flex-align" id="guide-and-advice-btn">
+                    <i class="guide-and-advice-icon">security</i>
+                    <span class="guide-and-advice-label">نصائح وإرشادات</span>
+                </button>
+                <a href="./the product/the product.html" class="shop-btn-container flex-align" target="_blank">
+                    <i class="shop-btn-icon">shop</i>
+                    <span class="shop-btn-label">السوق</span>
+                </a>
+            </div>
+            <div class="second-line-of-elements flex-center">
+                <span class="second-line-label">حقوق النشر محفوظة لفريق العمل &#169;</span>
+            </div>
+        </div>
+        <div class="lower-part">
+            <div class="for-special-moving-1">
+                <div class="the-name-2">g &#160&#160&#160bid </div>
+                <div class="golden-bid-logo-2">
+                    <div class="hummer-head"></div>
+                    <div class="hummer-hand"></div>
+                    <div class="hummer-floor"></div>
+                </div>
+            </div>
+            <div class="icons-container flex-align">
+                <i class="lower-part-first-icon">facebook</i>
+                <i class="lower-part-second-icon">whatsapp</i>
+                <i class="lower-part-third-icon">email</i>
+                <i class="lower-part-fourth-icon">instagram</i>
+                <i class="lower-part-fifth-icon">wifi</i>
+            </div>
+            <div class="year-date-container flex-align">
+                <span class="lower-part-R">&#169;</span>
+                <span class="lower-part-year-date">2022</span>
+            </div>
+        </div>
+    </footer>
+
+    <div id="contact-us-modal">
+        <div class="contact-us-container">
+            <div class="contact-us-head the-position flex-center">
+                <span class="contact-us-close">&times;</span>
+            </div>
+            <div class="contact-us-body the-position">
+                <img src="../images/message-icon-png-17.png" class="contact-us-img">
+                <form action="#" class="contact-us-form the-position flex-justify">
+                    <input type="text" name="" class="contact-us-email-field" placeholder="أدخل بريدك الإلكتروني">
+                    <textarea name="" class="contact-us-massage-field" placeholder="أدخل رسالتك"></textarea>
+                    <input type="submit" name="" class="contact-us-submit-btn" value="إرسال">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="about-us-modal">
+        <div class="about-us-container">
+            <div class="about-us-head the-position flex-center">
+                <span class="about-us-close">&times;</span>
+                <i class="about-us-main-icon-1">info</i>
+                <span class="about-us-main-title"> حول الموقع</span>
+                <i class="about-us-main-icon-2">info</i>
+            </div>
+            <div class="about-us-body">
+                <div class="about-us-body-first-section">
+                    <div class="about-us-body-first-section-title">*نظرة عامة عن الموقع*</div>
+                        <p class="about-us-body-first-section-label-1">- إنه ببساطة موقع مزايدة حيث يعرض البائع منتجاته بأقل سعر ممكن، ويبدأ المشترون في تقديم عروضهم، ولكل منتج وقت محدد لإنتهاء المزاد.</p>
+                        <p class="about-us-body-first-section-label-2">وبمجرد انتهاء الوقت ، ينتقل المنتج تلقائيًا إلى Golden Bid (المشتري الذي يقدم أعلى عرض).</p>
+                </div>
+                <div class="about-us-body-second-section">
+                    <div class="about-us-body-second-section-title">*لماذا موقعنا أفضل لك عند التسوق..؟؟*</div>
+                        <p class="about-us-body-second-section-label-1">- سواءاً كنت تريد بيع او شراء منتج، فعند إتمامك العملية من خلال موقعنا ستتمكن من الحصول على أعلى سعر ممكن عند البيع، وأقل سعر ممكن عن الشراء.</p>
+                        <p class="about-us-body-second-section-label-2">- ولن تكون هناك مساوامة على السعر المقرر؛ فلذلك تتم عمليتي البيع والشراء بكل سهولة ورضا للطرفين، وأمَا عن عملية البحث بالمنتجات عند الشراء فسيكون لك حرية تحديد ميزة معينة ترغب بوجودها بالمنتج وبالتالي ستتمكن من التصفُح بالمنتجات التي تحمل تلك الصفة فقط.</p>
+                        <p class="about-us-body-second-section-label-3">- غير أن عملية المزايدة مفيدة إذ كنت تريد البيع ولا تعرف القيمة المستحقة لذاك المنتج؛ فعند عرضك للمنتج بسعر أقل من قيمته الفعلية، سترى المزايدات بإرتفاع الى أن تصل لقيمته الفعلية عالأقل.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="guide-and-advice-modal">
+        <div class="guide-and-advice-container">
+            <div class="guide-and-advice-head the-position flex-center">
+                <span class="guide-and-advice-close">&times;</span>
+                <i class="guide-and-advice-main-icon-1">security</i>
+                <span class="guide-and-advice-main-title">نصائح وإرشادات</span>
+                <i class="guide-and-advice-main-icon-2">security</i>
+            </div>
+            <div class="guide-and-advice-body">
+                <div class="guide-and-advice-body-first-section flex-justify">
+                    <span class="guide-and-advice-body-first-section-title">عند الشراء</span>
+                        <p class="guide-and-advice-body-first-section-paragraph-1">- يرجى التأكد أولاً من نزاهة صاحب المنتج قبل المزايدة على منتجه وذلك بالدخول لصفحته الشخصية والتأكد من عدم وجود إبلاغات عليه، لضمان إجراء عملية الشراء دون إحتيال.</p>
+                        <p class="guide-and-advice-body-first-section-paragraph-2">- يرجى بعدم المزايدة على منتج إن كانت معلومات المنتج أو صوره مضللة، كما يرجى الإبلاغ عن ذلك.</p>
+                        <p class="guide-and-advice-body-first-section-paragraph-3">- يرجى الإلتقاء بأماكن عامة عند إستلام المنتج.</p>
+                </div>
+                <div class="guide-and-advice-body-second-section flex-justify">
+                    <span class="guide-and-advice-body-second-section-title">عند البيع</span>
+                        <p class="guide-and-advice-body-second-section-paragraph-1">- يرجى الإفصاح عن المعلومات الحقيقية عن المنتج، وعدم المراوغة بها.</p>
+                        <p class="guide-and-advice-body-second-section-paragraph-2">- علماً أن عرض معلومات غير حقيقية أو مضللة ستؤدي إلي صعوبة إيجاد المنتج من قِبل المشتري؛ فبالتالي عدم القدرة على بيع منتجك، مع إحتمالية تلقي إبلاغات بذلك الشأن؛ علماً بأن ذلك سيعود عليك بالضرر.</p>
+                        <p class="guide-and-advice-body-second-section-paragraph-3">- لعرض منتجك قم بإختيار القسم المناسب لمنتجك، ثم قم بتعبئة الحقول، إرفاق صور منتجك، وذلك لعملية بيع أسرع، علماً بأنه يوجد حقل يمكنك أن تضيف به أي معلومة أخرى تريدها عن المنتج، وعند الإنتهاء قم بحفظ المعلومات.</p>
+                </div>
+                <div class="guide-and-advice-body-third-section flex-justify">
+                    <span class="guide-and-advice-body-third-section-title">عند المزايدة</span>
+                        <p class="guide-and-advice-body-third-section-paragraph-1">- يرجى العلم بأنه سيتم خصم 10% من قيمة المنتج من حسابك البنكي عند تأكيد العملية وذلك لضمان المصداقية.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./the product.js"></script>
+    <!-- <script src="../the main.js"></script> -->
+    <!-- <script src="../the Bidding/the bidding.js"></script> -->
+</body>
+</html>
